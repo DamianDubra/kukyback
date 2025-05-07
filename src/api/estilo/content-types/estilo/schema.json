@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "estilos",
+  "info": {
+    "singularName": "estilo",
+    "pluralName": "estilos",
+    "displayName": "estilo"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nombreest": {
+      "type": "string"
+    },
+    "producto": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::producto.producto",
+      "mappedBy": "estilo"
+    }
+  }
+}
